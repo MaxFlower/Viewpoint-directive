@@ -1,12 +1,11 @@
 <div class="container">
   <h3>
-    Демо. Задание 2.
+    Viewpoint size directive.
   </h3>
-  <p>Реализован конфиг, которые при инициализации определяет пороговые значения ширины.</p>
-  <p>Создан демо модуль, который содержит тестовый компонент test-component, структурную директиву *ifViewportSize и сервис, с помощью которого подписываемся под изменение ширины окна.</p>
-  <p>Плавно меняйте ширину окна и вы увидите, как отображение тестовых компонентов изменяется. Сейчас выставлены следующие границы изменений:</p><br />
-  <span>medium: {{ config.breakpoints.medium }}</span><br />
-  <span>large: {{ config.breakpoints.large }}</span>
+  <p>Show content if it has appropriate viewpoint value.</p><br />
+  <span>Configuration for dispaly width: </span><br />
+  <span>medium: {{ config.breakpoints.medium }} px</span><br />
+  <span>large: {{ config.breakpoints.large }} px</span>
 
 
   <test-component *ifViewportSize="'small'" [value]="1"></test-component>
